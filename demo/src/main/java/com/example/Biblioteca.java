@@ -13,6 +13,12 @@ livros.add(new Livro(titulo, autor));
 public List<Livro> listarLivros() {
 return new ArrayList(livros);
 }
+/*
+ * Busca livros por autor, ignorando maiúsuculas/minúsculas.
+ * 
+ * @paran autor Nome do autor a ser buscado.
+ * @return Lita de livros do autor especificado.
+ */
 
 public List<Livro> buscarPorAutor(String autor) {
 return livros.stream()
